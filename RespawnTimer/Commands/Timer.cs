@@ -16,7 +16,7 @@
 
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
-            string userId = Player.Get(sender as PlayerCommandSender).UserId;
+            string userId = Player.Get(sender).UserId;
 
             if (!Handler.TimerHidden.Contains(userId))
             {
@@ -25,13 +25,11 @@
                 response = "<color=red>Respawn Timer has been hidden!</color>";
                 return true;
             }
-            else
-            {
-                Handler.TimerHidden.Remove(userId);
 
-                response = "<color=green>Respawn Timer has been shown!</color>";
-                return true;
-            }
+            Handler.TimerHidden.Remove(userId);
+
+            response = "<color=green>Respawn Timer has been shown!</color>";
+            return true;
         }
     }
 }

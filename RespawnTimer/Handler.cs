@@ -102,7 +102,7 @@
                     if (Config.ShowNumberOfSpectators)
                     {
                         Text += $"<align=right>{Translation.Spectators} {Translation.SpectatorsNum}\n</align>";
-                        Text = Text.Replace("{spectators_num}", Spectators.Count().ToString());
+                        Text = Text.Replace("{spectators_num}", Spectators.Count.ToString());
                     }
 
                     if (Config.ShowTickets)
@@ -115,7 +115,7 @@
                         Text = Text.Replace("{ci_tickets_num}", Respawn.ChaosTickets.ToString());
                     }
 
-                    foreach (Player player in Spectators.Where(x => !TimerHidden.Contains(x.UserId)))
+                    foreach (Player player in Spectators.Where(x => !TimerHidden.Contains(x.UserId) && !x.IsOverwatchEnabled))
                     {
                         player.ShowHint(Text, 1.1f);
                     }
@@ -151,7 +151,7 @@
 
         private List<Player> Spectators = new List<Player>();
 
-        private CoroutineHandle timerCoroutine = new CoroutineHandle();
+        private CoroutineHandle timerCoroutine;
 
         private static readonly Translation Translation = RespawnTimer.Singleton.Translation;
         private static readonly Config Config = RespawnTimer.Singleton.Config;
