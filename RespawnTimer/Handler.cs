@@ -102,7 +102,7 @@
                     if (Config.ShowNumberOfSpectators)
                     {
                         Text += $"<align=right>{Translation.Spectators} {Translation.SpectatorsNum}\n</align>";
-                        Text = Text.Replace("{spectators_num}", Spectators.Count.ToString());
+                        Text = Text.Replace("{spectators_num}", Spectators.Where(x => !x.IsOverwatchEnabled).Count().ToString());
                     }
 
                     if (Config.ShowTickets)
