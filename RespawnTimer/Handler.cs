@@ -18,7 +18,7 @@
 
             timerCoroutine = Timing.RunCoroutine(Timer());
 
-            Log.Debug($"RespawnTimer coroutine started successfully!", Config.ShowDebugMessages);
+            Log.Debug($"重生计时器协同程序成功启动！", Config.ShowDebugMessages);
         }
 
         private IEnumerator<float> Timer()

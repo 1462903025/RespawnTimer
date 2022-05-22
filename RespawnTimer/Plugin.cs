@@ -30,13 +30,13 @@
                 if (plugin.Name == "SerpentsHand" && plugin.Config.IsEnabled)
                 {
                     SerpentsHandAssembly = plugin.Assembly;
-                    Log.Debug("SerpentsHand plugin detected!", Config.ShowDebugMessages);
+                    Log.Debug("检测到蛇之手插件！", Config.ShowDebugMessages);
                 }
 
                 if (plugin.Name == "UIURescueSquad" && plugin.Config.IsEnabled)
                 {
                     UIURescueSquadAssembly = plugin.Assembly;
-                    Log.Debug("UIURescueSquad plugin detected!", Config.ShowDebugMessages);
+                    Log.Debug("检测到UIURescueSquad插件！", Config.ShowDebugMessages);
                 }
             }
 
@@ -53,7 +53,7 @@
             base.OnDisabled();
         }
 
-        public override string Name => "RespawnTimer";
+        public override string Name => "重生倒计时";
         public override string Author => "Michal78900";
         public override Version Version => new Version(3, 0, 0);
         public override Version RequiredExiledVersion => new Version(3, 0, 5);

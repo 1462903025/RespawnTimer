@@ -8,11 +8,11 @@
     [CommandHandler(typeof(ClientCommandHandler))]
     public class Timer : ICommand
     {
-        public string Command => "timer";
+        public string Command => "倒计时";
 
         public string[] Aliases => Array.Empty<string>();
 
-        public string Description => "Shows / hides RespawnTimer.";
+        public string Description => "显示/隐藏重生倒计时。";
 
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
@@ -22,13 +22,13 @@
             {
                 Handler.TimerHidden.Add(userId);
 
-                response = "<color=red>Respawn Timer has been hidden!</color>";
+                response = "<color=red>重生倒计时已隐藏！</color>";
                 return true;
             }
 
             Handler.TimerHidden.Remove(userId);
 
-            response = "<color=green>Respawn Timer has been shown!</color>";
+            response = "<color=green>已显示重生倒计时！</color>";
             return true;
         }
     }
