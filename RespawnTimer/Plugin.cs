@@ -53,7 +53,7 @@
             base.OnDisabled();
         }
 
-        public override string Name => "重生倒计时";
+        public override string Name => "RespawnTimer";
         public override string Author => "Michal78900";
         public override Version Version => new Version(3, 0, 0);
         public override Version RequiredExiledVersion => new Version(3, 0, 5);

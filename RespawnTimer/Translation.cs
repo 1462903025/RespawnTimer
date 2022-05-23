@@ -14,7 +14,7 @@
         public string NtfTickets { get; private set; } = "<color=blue>九尾狐特遣队: </color>";
         public string CiTickets { get; private set; } = "<color=green>混沌分裂者: </color>";
         public string Seconds { get; private set; } = " <b>{seconds} 秒</b>";
-        public string Minutes { get; private set; } = "<b>{minutes} 分钟.</b>";
+        public string Minutes { get; private set; } = "<b>{minutes} 分钟</b>";
         public string SpectatorsNum { get; private set; } = "{spectators_num}";
         public string NtfTicketsNum { get; private set; } = "{ntf_tickets_num}";
         public string CiTicketsNum { get; private set; } = "{ci_tickets_num}";

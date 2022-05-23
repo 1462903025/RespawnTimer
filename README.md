@@ -1,4 +1,4 @@
-# 重生倒计时
+# RespawnTimer
 
 此插件兼容[蛇之手](https://github.com/Exiled-Team/SerpentsHand), [UIURescueSquad](https://github.com/Jesus-QC/UIURescueSquad) 和[GhostSpectator](https://github.com/Thundermaker300/GhostSpectator) 插件.
 
