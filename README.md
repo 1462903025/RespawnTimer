@@ -1,6 +1,6 @@
-# RespawnTimer
+# 重生倒计时
 
-This plugin supports the [SerpentsHand](https://github.com/Exiled-Team/SerpentsHand), [UIURescueSquad](https://github.com/Jesus-QC/UIURescueSquad) and [GhostSpectator](https://github.com/Thundermaker300/GhostSpectator) plugins.
+此插件兼容[蛇之手](https://github.com/Exiled-Team/SerpentsHand), [UIURescueSquad](https://github.com/Jesus-QC/UIURescueSquad) 和[GhostSpectator](https://github.com/Thundermaker300/GhostSpectator) 插件.
 
 # Default
 ```yml
